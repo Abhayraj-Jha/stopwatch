@@ -17,8 +17,7 @@ body{
     width: 50%;
     height: 60%;
     border-radius: 10px;
-    /* margin-left: 20%; */
-    background-color: rgba(27, 31, 35, 0.25);
+    background-color: rgba(27, 31, 35, 0.212);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -40,7 +39,9 @@ body{
     outline: none;
     border: none;
     border-radius: 4px;
-    background-color: rgba(207, 222, 238, 0.959);
+    background-color: rgba(207, 222, 238, 0.808);
+    transition-property: all;
+    transition-duration: 0.2s;
 }
 
 .buttonContainer .start:hover{
@@ -56,4 +57,21 @@ body{
 .buttonContainer .reset:hover{
     background-color: rgb(47, 47, 248);
     color: white;
+}
+
+
+
+/* styling for mobile view  */
+
+
+
+@media (max-width: 700px) {
+    .mainContainer{
+        width: 90%;
+        height: 40%;
+    }
+
+    .mainContainer .clockContainer{
+        font-size: 65px;
+    }
 }
